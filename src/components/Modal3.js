@@ -32,37 +32,6 @@ const Modal3 = (props) => {
     });
   };
 
-  useEffect(() => {
-    if (letters.length > 0 && new Set(letters).size !== letters.length) {
-      function filterByCount(array, count) {
-        return array.filter(function (value) {
-          return (
-            array.filter(function (v) {
-              return v === value;
-            }).length === count
-          );
-        });
-      }
-
-      setLetters(filterByCount(letters, 1));
-    }
-  }, [letters]);
-
-  const { fullName, email, phone, problem, url, client, paid } = form;
-  useEffect(() => {
-    if (letters.length > 0)
-      setForm({
-        fullName,
-        email,
-        phone,
-        problem,
-        client,
-        paid,
-        url,
-        mailers: letters,
-      });
-  }, [letters, fullName, email, phone, problem, client, paid, url, urls]);
-
   console.log(form);
   return (
     <div
