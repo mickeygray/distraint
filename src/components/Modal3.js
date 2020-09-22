@@ -50,7 +50,7 @@ const Modal3 = (props) => {
     }
   }, [letters]);
 
-  const { fullName, email, phone, problem, company, url, client, paid } = form;
+  const { fullName, email, phone, problem, url, client, paid } = form;
   useEffect(() => {
     if (letters.length > 0)
       setForm({
