@@ -36,6 +36,28 @@
         <input type="text" name="company" placeholder="Phone Number" />
         <input type="text" name="paid" placeholder="Phone Number" />
         <input type="text" name="phone" placeholder="Phone Number" />
+        <input
+          type="checkbox"
+          name="letters"
+          value="criminal"
+          onChange="{onChange}"
+        />
+        <br />
+        <label htmlFor="years">Notice of Distraint Warrant</label>
+        <input
+          type="checkbox"
+          name="letters"
+          value="distraint"
+          onChange="{onChange}"
+        />
+        <br />
+        <label htmlFor="years">Social Security Seizure</label>
+        <input
+          type="checkbox"
+          name="letters"
+          value="ssi"
+          onChange="{onChange}"
+        />
         <select name="client" id="client">
           <option value=""></option>
           <option value="true">Yes</option>
