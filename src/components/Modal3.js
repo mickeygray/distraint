@@ -8,7 +8,6 @@ const Modal3 = (props) => {
       email: "",
       phone: "",
       problem: "",
-      company: "",
       client: "",
       paid: "",
       url: urls,
@@ -20,7 +19,6 @@ const Modal3 = (props) => {
     email: "",
     phone: "",
     problem: "",
-    company: "",
     client: "",
     paid: "",
     url: urls,
@@ -61,10 +59,10 @@ const Modal3 = (props) => {
         phone,
         problem,
         client,
-        company,
+
         paid,
         url,
-        mailers: [],
+        mailers: letters,
       });
   }, [
     letters.length,
@@ -73,12 +71,12 @@ const Modal3 = (props) => {
     phone,
     problem,
     client,
-    company,
     paid,
     url,
     urls,
   ]);
 
+  console.log(form);
   return (
     <div
       className='card bg-light container all-center'
@@ -100,6 +98,7 @@ const Modal3 = (props) => {
           name='url'
           style={{ display: "none" }}
           value={urls}
+          onChange={onChange}
         />
         <input
           type='text'
@@ -126,11 +125,11 @@ const Modal3 = (props) => {
         <div>
           <h3>Which Letters Did you Receive</h3>
 
-          <label htmlFor='years'>Notice of Criminal Investigation</label>
+          <label htmlFor='years'>Final Demand For Payment</label>
           <input
             type='checkbox'
             name='letters'
-            value='criminal'
+            value='final'
             onChange={onChange}
           />
           <br />
