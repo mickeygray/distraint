@@ -24,14 +24,12 @@ const Modal3 = (props) => {
     url: urls,
     mailers: [],
   });
-  const [letters, setLetters] = useState([]);
 
   const onChange = (e) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
     });
-    setLetters([...letters, e.target.value]);
   };
 
   useEffect(() => {
@@ -59,7 +57,6 @@ const Modal3 = (props) => {
         phone,
         problem,
         client,
-
         paid,
         url,
         mailers: letters,
@@ -118,7 +115,7 @@ const Modal3 = (props) => {
           <label htmlFor='years'>Final Demand For Payment</label>
           <input
             type='checkbox'
-            name='letters'
+            name='mailers'
             value='final'
             onChange={onChange}
           />
@@ -126,7 +123,7 @@ const Modal3 = (props) => {
           <label htmlFor='years'>Notice of Distraint Warrant</label>
           <input
             type='checkbox'
-            name='letters'
+            name='mailers'
             value='distraint'
             onChange={onChange}
           />
@@ -134,7 +131,7 @@ const Modal3 = (props) => {
           <label htmlFor='years'>Social Security Seizure</label>
           <input
             type='checkbox'
-            name='letters'
+            name='mailers'
             value='ssi'
             onChange={onChange}
           />
