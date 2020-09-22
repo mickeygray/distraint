@@ -64,17 +64,7 @@ const Modal3 = (props) => {
         url,
         mailers: letters,
       });
-  }, [
-    letters.length,
-    fullName,
-    email,
-    phone,
-    problem,
-    client,
-    paid,
-    url,
-    urls,
-  ]);
+  }, [letters, fullName, email, phone, problem, client, paid, url, urls]);
 
   console.log(form);
   return (
