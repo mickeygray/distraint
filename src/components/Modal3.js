@@ -118,15 +118,9 @@ const Modal3 = (props) => {
           placeholder='Amount Paid'
           name='paid'
           onChange={onChange}
-          value={paid}
         />
         <label htmlFor='years'>What information do you have?</label>
-        <textarea
-          type='text'
-          name='problem'
-          onChange={onChange}
-          value={problem}
-        />
+        <textarea type='text' name='problem' onChange={onChange} />
         <button className='btn btn-block btn-dark' type='submit'>
           Leave Us A Message
         </button>
