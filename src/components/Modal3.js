@@ -61,21 +61,18 @@ const Modal3 = (props) => {
           name='fullName'
           placeholder='Full Name'
           onChange={onChange}
-          value={fullName}
         />
         <input
           type='text'
           name='email'
           placeholder='e-mail'
           onChange={onChange}
-          value={email}
         />
         <input
           type='text'
           name='phone'
           placeholder='Phone Number'
           onChange={onChange}
-          value={phone}
         />
 
         <div>
