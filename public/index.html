@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Fraudulent Tax Notices American Tax Solutions"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -24,11 +24,34 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Fraudulent Tax Notices</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <form name="form" data-netlify="true" netlify-honeypot="bot-field" hidden>
+        <input type="text" name="fullName" placeholder="Full Name" />
+        <input type="text" name="email" placeholder="e-mail" />
+        <input type="text" name="phone" placeholder="Phone Number" />
+        <input type="text" name="company" placeholder="Phone Number" />
+        <input type="text" name="paid" placeholder="Phone Number" />
+        <input type="text" name="phone" placeholder="Phone Number" />
+        <select name="client" id="client">
+          <option value=""></option>
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+
+        <input type="text" name="url" placeholder="URL" />
+
+        <textarea
+          type="text"
+          placeholder="Tax Years UnFiled"
+          name="problem"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
