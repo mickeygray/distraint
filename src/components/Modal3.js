@@ -79,7 +79,7 @@ const Modal3 = (props) => {
         />
 
         <div>
-          <h3>Which Letters Did you Receive</h3>
+          <h3>Which Letters Did you Receive?</h3>
 
           <label htmlFor='years'>Final Demand For Payment</label>
           <input
